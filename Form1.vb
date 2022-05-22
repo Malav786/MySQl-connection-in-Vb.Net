@@ -154,4 +154,8 @@ Public Class Form1
         Dim recP As RectangleF = e.PageSettings.PrintableArea
         If Me.DataGridView1.Height - recP.Height > 0 Then e.HasMorePages = True
     End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Form2.Show()
+    End Sub
 End Class
